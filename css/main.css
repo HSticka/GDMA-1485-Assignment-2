@@ -1,3 +1,187 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*--------------------------------------------------------------
+>>> CSS STANDARDS
+----------------------------------------------------------------
+1. Place in appropriate section
+2. Add new sections to the Table of Contents as needed
+3. Order properties consistently inside each declaration i.e. alphabetically or by function 
+4. Declaration selectors should each occupy a new line
+5. Enter one new line between rules
+6. Enter more than one new line between categories 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+3.0 GENERIC
+-------------------------------------------------------------- */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'EB Garamond', serif;
+}
+
+/* 
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+
+/* -- FORMS -- */ 
+
+/*--------------------------------------------------------------
+5.0 OBJECTS 
+-------------------------------------------------------------- */
+
+/* -- FRAMEWORK -- */ 
+.row {
+	overflow: auto;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+6.0 COMPONENTS
+-------------------------------------------------------------- */
+/* HEROES AND TOP NAV */
+
+#bg-hero {
+	background-image: url("../img/hero.jpeg");
+}
+
+#bg-about {
+	background-image: url("../img/about.jpeg")
+}
+
+#bg-action {
+	background-image: url("../img/take-action full.jpg")
+}
+
+#bg-hero, #bg-about, #bg-action {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+
+nav li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+#bg-hero > div > p, #bg-about > div > h1, #bg-action > div > h1, body > div > p, body > div > div:nth-child(2), .col-1-2 {
+	text-align: center;
+}
+
+/* FLOAT */
+
+#bg-hero > div > div > div, #bg-about > div > div > div, #bg-action > div > div > div, .col-1-2 {
+	float: left;
+}
+
+#bg-hero > div > div > nav, #bg-about > div > div > nav, #bg-action > div > div > nav, .col-1-2:last-child {
+	float: right;
+}
+
+.col-1-2 {
+	width: 550px;
+	
+}
+
+/* -- BUTTONS -- */ 
+
+
+
+
+
+/* --FOOTER-- */
+
+#bg-green {
+	background-color: #36b3ac;
+}
+
+#bg-green > div > ul {
+	list-style-type: none;
+}
+
+#bg-green li, #bg-green li a, #bg-black li { 
+	display: inline-block;
+}
+
+#bg-green a span {
+	display: none;
+}
+
+#bg-green ul a {
+	width: 25px;
+	height: 25px;
+}
+
+#bg-green li:first-child a {
+	background: url("../img/sprite-fbook.png") no-repeat 0 0; 
+}
+
+#bg-green li:nth-child(2) a {
+	background: url("../img/sprite-button.png") no-repeat 0 0;
+}
+
+#bg-green li:last-child a {
+	background: url("../img/sprite-twitter.png") no-repeat 0 0;
+}
+
+#bg-green li a:hover {
+	background-position: 0 -25px;
+}
+
+#bg-black {
+	background-color: #000;
+	color: #fff;
+}
+
+/*why are my sprites applying to my #bg-black li? */
+
+#bg-black li {
+	align: center; /*how the frick do I center the footer and the sprites??? */
+}
+/*--------------------------------------------------------------
+7.0 UTILITIES
+ -------------------------------------------------------------- */
+
+/* -- FORMS -- */ 
+

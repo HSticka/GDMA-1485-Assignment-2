@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Bedford Foundation &#124; About</title>
 	
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
@@ -12,7 +13,7 @@
 
 <body>
 		
-    <header id="bg-home">
+    <header id="bg-about">
         <div class="wrapper">
             <div class="row">
                 <div>
@@ -37,8 +38,8 @@
                 <p>About</p>
                 <ul>
                   <li><a href="#">What we do</a></li>
-                  <li><a href="#">Our Mission</a></li> 
-                  <li><a href="#">Achievements</a></li> <!-- Heather- be sure to link this properly -->
+                  <li><a href="#mission">Our Mission</a></li> 
+                  <li><a href="#achievements">Achievements</a></li> <!-- Heather- be sure to link this properly -->
                 </ul>
 			</nav>	
 		</div>
@@ -46,24 +47,23 @@
 			
 				<p>Since 1950, we have led the effort to permanently protect nearly 110 million acres of wilderness. We have been at the forefront of nearly every major public lands victory. </p>
 			
-			<section>
+			<section id="mission">
 				<header>
 					<h2>Our Mission</h2>
 				</header>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus. Maecenas luctus erat lobortis neque molestie, in scelerisque arcu sollicitudin. Donec blandit, arcu a dapibus iaculis, velit nisi luctus libero, eu maximus ligula diam eget ante. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed quis enim nibh</p>
 			</section>
 			<blockquote>
-				<p>"</p>
+				 <!-- put the " in using :before pseudo selector... like pink circles but with &quot; in the content '' -->
 				<p>Bedford has helped accomplish over 200 of its partners’ major conservation goals. &#9679;They inspire everyone to care for the planet</p>
 				<footer>
 					<p>&mdash; John Smith, Nature Conservancy Magazine </p>
 				</footer>	
 			</blockquote>
-			<section class="row">
-				
+			<section class="row" id="achievements">
 					<header>
 						<h2>Our Achievements</h2>
-					</header>
+					</header>			
 				<div class="col-1-2">
                     <ul>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -82,17 +82,61 @@
 			</section>
 		</div>
 	</div>
-	<footer>
-        <div class="bg-green">	
+	
+	<table class="wrapper">
+		<caption>Donations Made by Year</caption>
+		<thead>
+			<th>Year</th>
+			<th>Organization</th>
+			<th>Net</th>
+			<th>Gross</th>
+		</thead>
+		<tbody>
+			<tr>
+              <td>2019</td>
+              <td>Donec blandit</td>
+              <td>&#36;1,042.00</td>
+              <td>&#36;1,000.00</td>
+			</tr>
+			<tr>
+              <td>2018</td>
+              <td>Vivamus scelerisque enim</td>
+              <td>&#36;23,498.00</td>
+              <td>&#36;2,000.00</td>
+			</tr>
+			<tr>
+              <td>2017</td>
+              <td>Lorem ipsum dolor</td>
+              <td>&#36;78,230.00</td>
+              <td>&#36;70,000.00</td>
+			</tr>
+			<tr>
+              <td>2016</td>
+              <td>eu maximus ligula diam</td>
+              <td>&#36;817.00</td>
+              <td>&#36;800.00</td>
+			</tr>
+			<tr>
+              <td>2015</td>
+              <td>scelerisque arcu sollicitudin</td>
+              <td>&#36;234,872.00</td>
+              <td>&#36;230,000.00</td>
+			</tr>
+		</tbody>
+	
+	</table>
+	
+	
+	
+	<footer id="bg-green">        	
             <div class="wrapper">
                 <ul>
                     <li><a href="http://www.facebook.com" target="_blank"><span>Facebook</span></a></li>
                     <li><a href="http://www.flickr.com" target="_blank"><span>Flickr</span></a></li>
                     <li><a href="http://www.twitter.com" target="_blank"><span>Twitter</span></a></li>
                 </ul>
-            </div>
-        </div>	
-		<div class="bg-black">
+            </div>        	
+		<div id="bg-black">
             <div class="wrapper">
                <li> 
                     <a href="https://www.google.com/maps/place/459+Broadway,+New+York,+NY+10013/@40.7208592,-74.00315,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598bd3fc4031:0x48b829f544b1ce3f!8m2!3d40.7208592!4d-74.0009613" target="_blank">459 Broadway, New York</a>
