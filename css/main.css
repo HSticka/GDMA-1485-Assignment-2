@@ -109,15 +109,69 @@ header p, h1, .col-1-2 {
 	text-align: center;
 }
 
+header {
+	padding: 50px 30px 85px 30px;
+}
 /* FONTS */
 
-header a, h2, h1 {
-	font: 400 18px 'Montserrat', sans-serif;
-	text-transform: uppercase;
+header a, h1, h2, header p {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;	
+}
+
+header a, h1, header p {
+	font-weight: 400;
+	font-size: 20px;	
 	padding: 15px 10px;
-	margin: 15px 10px;
+	margin: 5px 10px;
 	color: #fff;
 }
+
+header p {
+	font-size: 85px;
+	font-weight: 600;
+	
+}
+
+header span {	
+	font-style: italic;
+	font-size: 35px;
+	text-transform: lowercase;
+	font-weight: 200;
+}
+ /* SECTION: INDEX */
+
+header+div > p, header+div > div:nth-child(2) {
+	text-align: center;	
+}
+
+header+div > div:nth-child(2) {
+	padding: 5px 0 60px 0;
+	margin: 5px 250px;
+	width: 600px;
+}
+header+div {
+	padding: 60px 0;
+}
+
+header+div >p {
+	font-weight: 500;
+	font-size: 30px;
+}
+
+header+div > div:nth-child(2) > p:last-child {
+	font-style: italic;
+}
+
+header+div > div:nth-child(2) > p:last-child a {
+	color: #36b3ac;
+}
+
+header+div h2 {
+	color: #bdbdbd; /*i don't understand how to overwrite this padding. i know it's a casdase thing, but I can't figure it out */
+	
+}
+
 
 /* FLOAT */
 
@@ -126,7 +180,7 @@ header.row div, #bg-hero h1, .col-1-2 {
 }
 
 header nav, .col-1-2:last-child { /* the nav is now floating below on about and take-action, does it need a width? update: tried that. Nope. */
-	float: right;
+	float: right; 
 }
 
 .col-1-2 {
@@ -143,7 +197,7 @@ header nav {
 }
 /* -- BUTTONS -- */ 
 
- header li:last-child, header a:last-child {
+ /* header li:last-child, header a:last-child {
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -151,8 +205,8 @@ header nav {
 	border-radius: 10px;	
 	padding: 20px 30px;
 	text-decoration: none;
-	background-color: white; /*will replace when I can see it works */ 
-}
+	background-color: white; apparently, I do not understand buttons. Like, at all.  
+}*/
 
 
 
@@ -168,6 +222,8 @@ footer ul {
 
 footer li, footer a { /*fixed the html on the black footer nav and now it has the same width as the sprites, must find and fix UPDATE: idk how to fix. very confused */
 	display: inline-block;
+	padding: 5px;
+	margin-top: 7px;
 }
 
 footer span {
@@ -176,7 +232,7 @@ footer span {
 
 #bg-green ul a {
 	width: 25px;
-	height: 25px;
+	height: 25px; /* on inspect, it says 25x36? what's up with that? */
 }
 
 #bg-green li:first-child a {
@@ -200,6 +256,9 @@ footer span {
 	color: #fff;	
 }
 
+#bg-black li {
+	text-decoration: none;
+}
 /*why are my sprites applying to my #bg-black li? update: I still have no clue, mut be an override css thing or better targeting. I do not understand how though. */
 
 footer ul, #bg-black {
