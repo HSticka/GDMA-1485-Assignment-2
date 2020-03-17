@@ -87,14 +87,14 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 #bg-action {
-	background-image: url("../img/take-action full.jpg")
+	background-image: url("../img/take-action.jpg")
 }
 
 #bg-hero, #bg-about, #bg-action {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 650px;
+	
 }
 
 nav li {
@@ -105,17 +105,27 @@ a {
 	text-decoration: none;
 }
 
-#bg-hero > div > p, #bg-about > div > h1, #bg-action > div > h1, body > div > p, body > div > div:nth-child(2), .col-1-2 {
+header p, h1, .col-1-2 {
 	text-align: center;
+}
+
+/* FONTS */
+
+header a, h2, h1 {
+	font: 400 18px 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	padding: 15px 10px;
+	margin: 15px 10px;
+	color: #fff;
 }
 
 /* FLOAT */
 
-#bg-hero > div > div > div, #bg-about > div > div > div, #bg-action > div > div > div, .col-1-2 {
+header.row div, #bg-hero h1, .col-1-2 { 
 	float: left;
 }
 
-#bg-hero > div > div > nav, #bg-about > div > div > nav, #bg-action > div > div > nav, .col-1-2:last-child {
+header nav, .col-1-2:last-child { /* the nav is now floating below on about and take-action, does it need a width? update: tried that. Nope. */
 	float: right;
 }
 
@@ -124,9 +134,25 @@ a {
 	
 }
 
+header .row div, #bg-hero h1 {
+	width: 250px;
+}
+
+header nav {
+	width: 500px; 
+}
 /* -- BUTTONS -- */ 
 
-
+ header li:last-child, header a:last-child {
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;	
+	padding: 20px 30px;
+	text-decoration: none;
+	background-color: white; /*will replace when I can see it works */ 
+}
 
 
 
@@ -136,15 +162,15 @@ a {
 	background-color: #36b3ac;
 }
 
-#bg-green > div > ul {
+footer ul {
 	list-style-type: none;
 }
 
-#bg-green li, #bg-green li a, #bg-black li { 
+footer li, footer a { /*fixed the html on the black footer nav and now it has the same width as the sprites, must find and fix UPDATE: idk how to fix. very confused */
 	display: inline-block;
 }
 
-#bg-green a span {
+footer span {
 	display: none;
 }
 
@@ -171,13 +197,13 @@ a {
 
 #bg-black {
 	background-color: #000;
-	color: #fff;
+	color: #fff;	
 }
 
-/*why are my sprites applying to my #bg-black li? */
+/*why are my sprites applying to my #bg-black li? update: I still have no clue, mut be an override css thing or better targeting. I do not understand how though. */
 
-#bg-black li {
-	align: center; /*how the frick do I center the footer and the sprites??? */
+footer ul, #bg-black {
+	text-align: center; 
 }
 /*--------------------------------------------------------------
 7.0 UTILITIES
