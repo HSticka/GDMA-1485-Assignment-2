@@ -123,6 +123,11 @@ header .row h1 {
 	padding: 0;
 }
 
+nav a:hover {
+	color: #000;
+}
+
+
 
 /* FONTS */
 
@@ -331,18 +336,39 @@ header nav {
  
 /* -- BUTTONS -- */ 
 
- /* header li:last-child, header a:last-child {
-	-moz-border-radius: 10px;
-	-o-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;	
-	padding: 20px 30px;
+.btn, #btn-nav:hover {
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;	
 	text-decoration: none;
-	background-color: white; apparently, I do not understand buttons. Like, at all.  
-}*/
+	background-color: #36b3ac;
+	padding: 10px;
+}
 
+.btn > a {
+	padding: 20px 10px;
+	color: #fff;
+}
 
+.btn > a:hover {
+	color: #B4EDEA;
+}
+
+#btn-nav {
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;	
+	text-decoration: none;
+	border: 2px solid #fff;
+}
+
+#btn-nav:hover {
+	background-color: #fff;
+}
 
 /* --FOOTER-- */
 
